@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshaya Sri | Developer & UI/UX Specialist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+
+  <!-- Interactive Grid Mesh Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Side Sticky Vertical Quick Links -->
+  <aside class="quick-social-bar">
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LN</a>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+    <div class="bar-line"></div>
+  </aside>
+
+  <!-- Top Floating Glass Navigation Header -->
+  <header class="floating-header">
+    <div class="nav-container">
+      <div class="brand-signature">
+        <span class="symbol">&lt;/&gt;</span>
+        <span class="name">Akshaya Sri</span>
+      </div>
+
+      <nav class="pill-nav">
+        <button class="nav-link active" data-tab="home">Home</button>
+        <button class="nav-link" data-tab="about">Academics</button>
+        <button class="nav-link" data-tab="skills">Capabilities</button>
+        <button class="nav-link" data-tab="projects">Work</button>
+        <button class="nav-link" data-tab="contact">Contact</button>
+      </nav>
+
+      <div class="header-right">
+        <button class="theme-switch-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <span class="mode-icon">✦</span>
+        </button>
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Router Container -->
+  <main class="viewport-wrapper container">
+
+    <!-- VIEW 1: HOME / HERO SECTION -->
+    <section id="home" class="view-panel active">
+      <div class="hero-split-grid">
+        <div class="hero-intro">
+          <div class="status-indicator">
+            <span class="ping-dot"></span>
+            <span>KG College Of Arts And Science • Undergraduate Student</span>
+          </div>
+
+          <h1 class="display-heading">
+            Crafting Digital <br>
+            <span class="text-glow">Experiences</span> & Code.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Akshaya Sri</strong>. A front-end web developer and UI/UX design enthusiast focused on building high-performance, accessible, and sleek modern web applications.
+          </p>
+
+          <div class="action-row">
+            <button class="cta-btn primary-glow" onclick="switchTab('projects')">
+              <span>View Portfolio</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="cta-btn outline-glow" onclick="switchTab('about')">
+              <span>Academic Performance</span>
+            </button>
+          </div>
+
+          <!-- Quick Stat Counters Block -->
+          <div class="metric-ribbon">
+            <div class="metric-item">
+              <span class="metric-value">>90%</span>
+              <span class="metric-label">Aggregate Grade Score</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">07+</span>
+              <span class="metric-label">Frontend Web Projects</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Academic Commitment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="title">akshaya_sri.config.js</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="keyword">const</span> <span class="variable">student</span> = {</p>
+              <p class="indent"><span class="property">name</span>: <span class="string">'Akshaya Sri'</span>,</p>
+              <p class="indent"><span class="property">institution</span>: <span class="string">'KG CAS'</span>,</p>
+              <p class="indent"><span class="property">academicScore</span>: <span class="string">'Above 90%'</span>,</p>
+              <p class="indent"><span class="property">coreFocus</span>: [<span class="string">'Frontend Dev'</span>, <span class="string">'UI/UX'</span>],</p>
+              <p class="indent"><span class="property">status</span>: <span class="string">'Available for Collaborations'</span></p>
+              <p>};</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: ABOUT & ACADEMICS SECTION -->
+    <section id="about" class="view-panel">
+      <div class="section-header-block">
+        <span class="section-tag">BACKGROUND & MARKS</span>
+        <h2 class="section-title">Academic Distinction</h2>
+      </div>
+
+      <div class="academic-split">
+        <div class="narrative-box glow-card">
+          <h3>Profile Overview</h3>
+          <p>I am pursuing my degree at <strong>KG College Of Arts And Science</strong> with an exceptional academic record consistently exceeding <strong>90% across semesters</strong>.</p>
+          <p>My methodology blends disciplined academic research with hands-on coding. I specialize in turning complex requirements into clean, accessible web interfaces.</p>
+          
+          <div class="badge-cluster">
+            <span class="pill-badge">Matriculation Board Scholar</span>
+            <span class="pill-badge">Computer Science Distinction</span>
+          </div>
+        </div>
+
+        <div class="score-breakdown glow-card">
+          <div class="score-card-header">
+            <h4>KG College Of Arts And Science</h4>
+            <span class="top-grade-tag">>90% Overall</span>
+          </div>
+
+          <div class="progress-track-group">
+            <div class="track-item">
+              <div class="track-meta">
+                <span>Semester I Examinations</span>
+                <span class="track-score">94%</span>
+              </div>
+              <div class="track-bar-bg"><div class="track-bar-fill" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="track-item">
+              <div class="track-meta">
+                <span>Semester II Examinations</span>
+                <span class="track-score">95%</span>
+              </div>
+              <div class="track-bar-bg"><div class="track-bar-fill" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="school-summary">
+              <h5>Higher Secondary Education</h5>
+              <p>Completed under <strong>Matriculation Board</strong> with top-tier distinction in Core Science and Computer Applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: SKILLS SECTION -->
+    <section id="skills" class="view-panel">
+      <div class="section-header-block">
+        <span class="section-tag">TECH STACK</span>
+        <h2 class="section-title">Technical Capabilities</h2>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="capability-card glow-card">
+          <div class="cap-icon">01</div>
+          <h3>Web Engineering</h3>
+          <ul class="cap-list">
+            <li>HTML5 Semantic Markup</li>
+            <li>CSS3 Flexbox & CSS Grid</li>
+            <li>Vanilla JS (ES6+)</li>
+            <li>DOM Manipulation & Async Logic</li>
+          </ul>
+        </div>
+
+        <div class="capability-card glow-card">
+          <div class="cap-icon">02</div>
+          <h3>UI/UX Architecture</h3>
+          <ul class="cap-list">
+            <li>Responsive Interface Design</li>
+            <li>Wireframing & Layout Systems</li>
+            <li>Color Contrast & Accessibility</li>
+            <li>Glassmorphism & Cyberpunk UI</li>
+          </ul>
+        </div>
+
+        <div class="capability-card glow-card">
+          <div class="cap-icon">03</div>
+          <h3>Professional Competencies</h3>
+          <ul class="cap-list">
+            <li>Analytical Problem Solving</li>
+            <li>Technical Documentation</li>
+            <li>Collaborative Teamwork</li>
+            <li>Version Control Fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: PROJECTS SECTION -->
+    <section id="projects" class="view-panel">
+      <div class="section-header-block">
+        <span class="section-tag">PROJECT PORTFOLIO</span>
+        <h2 class="section-title">Featured Works</h2>
+      </div>
+
+      <!-- Segment Filter Pills -->
+      <div class="filter-pill-bar">
+        <button class="segment-btn active" data-filter="all">All</button>
+        <button class="segment-btn" data-filter="Web Application">Web Apps</button>
+        <button class="segment-btn" data-filter="UI/UX & Web Design">UI/UX</button>
+        <button class="segment-btn" data-filter="Utility Tool">Utilities</button>
+      </div>
+
+      <div class="projects-flex-grid">
+        <!-- Project 1 -->
+        <article class="project-block glow-card" data-category="Web Application">
+          <div class="block-tag">Web App</div>
+          <h3>KG CAS Student Portal</h3>
+          <p>An academic dashboard engineered for college students to calculate SGPA and manage course schedules.</p>
+          <div class="tech-stack-row">
+            <span>HTML5</span><span>CSS Grid</span><span>JavaScript</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(1)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-block glow-card" data-category="UI/UX & Web Design">
+          <div class="block-tag">UI Design</div>
+          <h3>Responsive E-Learning Hub</h3>
+          <p>Interactive web learning platform interface featuring custom course accordions and video layouts.</p>
+          <div class="tech-stack-row">
+            <span>CSS Flexbox</span><span>JavaScript</span><span>HTML5</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(2)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-block glow-card" data-category="Utility Tool">
+          <div class="block-tag">Utility</div>
+          <h3>Academic GPA Calculator</h3>
+          <p>Automated grade point computation tool built specifically for college subject credit systems.</p>
+          <div class="tech-stack-row">
+            <span>Vanilla JS</span><span>HTML5</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(3)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-block glow-card" data-category="Web Application">
+          <div class="block-tag">Web App</div>
+          <h3>Smart Study Tracker</h3>
+          <p>Productivity application integrating a Pomodoro focus timer with local storage sync.</p>
+          <div class="tech-stack-row">
+            <span>JavaScript</span><span>LocalStorage</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(4)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-block glow-card" data-category="UI/UX & Web Design">
+          <div class="block-tag">UI Design</div>
+          <h3>Symposium Event Website</h3>
+          <p>Departmental showcase and registration site with countdown timers and dynamic schedules.</p>
+          <div class="tech-stack-row">
+            <span>HTML5</span><span>CSS Animations</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(5)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-block glow-card" data-category="Web Application">
+          <div class="block-tag">Web App</div>
+          <h3>Interactive Weather Suite</h3>
+          <p>Real-time atmospheric analytics dashboard built using the Fetch API.</p>
+          <div class="tech-stack-row">
+            <span>Fetch API</span><span>JavaScript</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(6)">Inspect Case Study →</button>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-block glow-card" data-category="UI/UX & Web Design">
+          <div class="block-tag">UI Design</div>
+          <h3>Portfolio Prototype v1</h3>
+          <p>Experimental web layout exploring modern glassmorphism and subtle CSS keyframe interactions.</p>
+          <div class="tech-stack-row">
+            <span>HTML5</span><span>CSS3</span>
+          </div>
+          <button class="block-link-btn" onclick="openProjectModal(7)">Inspect Case Study →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- VIEW 5: CONTACT SECTION -->
+    <section id="contact" class="view-panel">
+      <div class="section-header-block">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Start A Conversation</h2>
+      </div>
+
+      <div class="contact-dual-grid">
+        <div class="contact-card glow-card">
+          <h3>Contact Details</h3>
+          <div class="contact-row">
+            <span class="c-label">Email:</span>
+            <span class="c-val">akshayasri.student@kgcas.edu</span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">College:</span>
+            <span class="c-val">KG College Of Arts And Science</span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Location:</span>
+            <span class="c-val">Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Networks:</span>
+            <span class="c-val">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: #00f2fe; margin-right: 0.5rem;">LinkedIn</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: #00f2fe;">GitHub</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-card glow-card">
+          <form id="contact-form" novalidate>
+            <div class="input-block">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="Akshaya Sri">
+              <span class="error-msg" id="name-error">Please enter at least 2 characters.</span>
+            </div>
+
+            <div class="input-block">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="name@example.com">
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="input-block">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" placeholder="Type your message..."></textarea>
+              <span class="error-msg" id="message-error">Message must be at least 10 characters.</span>
+            </div>
+
+            <button type="submit" class="cta-btn primary-glow" style="width: 100%; justify-content: center;">Send Direct Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-bar">
+    <p>&copy; 2026 Akshaya Sri • KG College Of Arts And Science</p>
+  </footer>
+
+  <!-- Modal Overlay -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-dialog glow-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3 id="modal-title">Project Details</h3>
+      <p id="modal-category" class="modal-meta-tag"></p>
+      <p id="modal-description" class="modal-desc-body"></p>
+    </div>
+  </div>
+
+  <div class="toast-box" id="toast">Message validated successfully!</div>
+  <button class="top-jump-btn" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
